@@ -34,7 +34,7 @@ namespace AwesomeShop.Services.Orders.Core.Entities
         public DateTime CreatedAt { get; private set; }
         public OrderStatus Status { get; private set; }
 
-        public void SetStatus() => Status = OrderStatus.Completed;
+        public void SetAsCompleted() => Status = OrderStatus.Completed;
 
         public void SetAsRejected() => Status = OrderStatus.Rejected;
         
